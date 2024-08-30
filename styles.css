@@ -4,6 +4,8 @@
 *{
     --grey: #808080;
     --darkGreen: #2A641C;
+    --green:#3C8527;
+    --red: red;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -60,10 +62,32 @@ h1{
     margin: 20px;
 }
 
+input {
+    padding: 5px;
+    color: white;
+    background-color: #1D2B3A;
+    border: 1px transparent;
+    border-bottom: 1px solid var(--grey);
+}
+
+input:focus {
+    border: 1px solid var(--grey);
+}    
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border-style: solid;
+    border-color: var(--green);
+
+}
+input:not(:focus):not(:placeholder-shown):invalid{
+    border-style: solid;
+    border-color: var(--red);
+}
+
 button {
     all: unset;
     margin: 20px;
-    background-color: #3C8527;
+    background-color: var(--green);
 
 }
 

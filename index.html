@@ -14,32 +14,34 @@
         <div class = "right">
             <div id="topdiv"></div>
             <div>
-                <form action="">
+                <form action="" id = "form">
                     <h1>Get Started</h1>
                     <div class="form">
                         <div class="input">
-                            <label for="firstname">First Name</label>
-                            <input type="text" name="firstname" required>
+                            <label for="firstname" class = "label">First Name</label>
+                            <input type="text" name="firstname" placeholder="" required>
+                            <label for="firstname" class = "error"> *Please enter a first name</label>
                         </div>
                         <div class="input">
-                            <label for="surname">Last Name</label>
-                            <input type="text" name="surname" required>
+                            <label for="surname" class = "label">Last Name</label>
+                            <input type="text" name="surname" placeholder="" required>
+                            <label for="surname" class = "error"> *Please enter a last name</label>
                         </div>
                         <div class="input">
                             <label for="email">Email</label>
-                            <input type="email" name="email" required>
+                            <input type="email" name="email" placeholder="" required>
                         </div>
                         <div class="input">
                             <label for="phone">Phone</label>
-                            <input type="tel" name="phone" required>
+                            <input type="tel" name="phone" placeholder="" required>
                         </div>
                         <div class="input">
                             <label for="password">Password</label>
-                            <input type="text" name="password" id="" required>
+                            <input type="text" name="password" id="" placeholder = "" required>
                         </div>
                         <div class="input">
                             <label for="confirmpw">Confirm Password</label>
-                            <input type="text" name="confirmpw" id="" required>
+                            <input type="text" name="confirmpw" id="" placeholder = "" required>
                         </div>
                     </div>
                     <button type="submit" id ="submit">Submit</button>
