@@ -10,6 +10,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins';
+    color:white;
 }
 
 
@@ -57,6 +58,12 @@ h1{
     flex-flow: row wrap;
 }
 
+.error {
+    display:none;
+    text-transform: none;
+    color: red;
+}
+
 .input {
     width: 40%;
     margin: 20px;
@@ -79,10 +86,15 @@ input:not(:focus):not(:placeholder-shown):valid {
     border-color: var(--green);
 
 }
-input:not(:focus):not(:placeholder-shown):invalid{
+input:not(:focus):not(:placeholder-shown):invalid, input:user-invalid {/*Highlights the elements that are both invalid and have interacted before */
     border-style: solid;
     border-color: var(--red);
 }
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error, input:user-invalid ~ .error{ /* Sibling selector for CSS */
+    display: block;
+}
+
 
 button {
     all: unset;
@@ -107,4 +119,17 @@ button {
     top: 5px;
     box-shadow: 0px 0px var(--grey);
     background-color: var(--darkGreen);
+}
+
+.login {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#login {
+    text-decoration: none;
+}
+
+#login:hover {
+    color: var(--green)
 }
