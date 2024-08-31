@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 *{
     --grey: #808080;
     --darkGreen: #2A641C;
     --green:#3C8527;
     --red: red;
+    --opacity: 0.6;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -37,6 +45,29 @@ label {
     width: 40vw;
 }
 
+#blackBg {
+    font-size: 5em;
+    width: 40vw;
+    height: 200px;
+    margin-top: 20vh;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#wholesome {
+    display:block;
+    transform: scale(0.7);
+    z-index: 1;
+    
+}    
+
+.text{
+    font-family: "norsebold";
+    margin-top: 60px;
+}
+
 .right {
     background-color: #1D2B3A;
     display: flex;
@@ -56,6 +87,10 @@ h1{
 .form {
     display: flex;
     flex-flow: row wrap;
+}
+
+#form {
+    margin:20px;
 }
 
 .error {
